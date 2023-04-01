@@ -10,9 +10,8 @@ defined('BASEPATH') or exit('No direct script access allowed');
  *
  * @package   CodeIgniter
  * @category  Controller CI
- * @author    Setiawan Jodi <jodisetiawan@fisip-untirta.ac.id>
- * @author    Raul Guerrero <r.g.c@me.com>
- * @link      https://github.com/setdjod/myci-extension/
+ * @author    Johannes Alexander Putra <johannesap@upi.edu>
+ * @link      https://github.com/Itsjohanes
  * @param     ...
  * @return    ...
  *

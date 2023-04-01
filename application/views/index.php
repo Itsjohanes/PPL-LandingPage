@@ -5,11 +5,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
     <title>PPL UPI SMKN 1 Cimahi 2023</title>
-    <link rel="stylesheet" href="<?= base_url('assets/'); ?>bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="<?= base_url('assets/frontend/'); ?>bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i&amp;display=swap" />
-    <link rel="stylesheet" href="<?= base_url('assets/'); ?>fonts/simple-line-icons.min.css" />
-    <link rel="stylesheet" href="<?= base_url('assets/'); ?>css/baguetteBox.min.css" />
-    <link rel="stylesheet" href="<?= base_url('assets/'); ?>css/vanilla-zoom.min.css" />
+    <link rel="stylesheet" href="<?= base_url('assets/frontend/'); ?>fonts/simple-line-icons.min.css" />
+    <link rel="stylesheet" href="<?= base_url('assets/frontend/'); ?>css/baguetteBox.min.css" />
+    <link rel="stylesheet" href="<?= base_url('assets/frontend/'); ?>css/vanilla-zoom.min.css" />
 </head>
 
 <body>
@@ -32,7 +32,7 @@
     </nav>
     <main class="page landing-page">
         <section class="clean-block clean-hero" style="
-          background-image: url('assets/img/tech/upi.jpg');
+          background-image: url('<?= base_url('assets/frontend/'); ?>img/tech/upi.jpg');
           color: rgba(9, 162, 255, 0.85);
         ">
             <div class="text">
@@ -51,7 +51,7 @@
                 </div>
                 <div class="row align-items-center">
                     <div class="col-md-6">
-                        <img class="img-thumbnail" src="assets/img/tech/smkn1.jpg" />
+                        <img class="img-thumbnail" src="<?= base_url('assets/frontend/'); ?>img/tech/smkn1.jpg" />
                     </div>
                     <div class="col-md-6">
                         <h3>SMKN 1 Cimahi</h3>
@@ -78,13 +78,13 @@
                 <div class="carousel slide" data-bs-ride="carousel" id="carousel-1">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="w-100 d-block" src="assets/img/scenery/image1.jpg" alt="Slide Image" />
+                            <img class="w-100 d-block" src="<?= base_url('assets/frontend/'); ?>img/scenery/image1.jpg" alt="Slide Image" />
                         </div>
                         <div class="carousel-item">
-                            <img class="w-100 d-block" src="assets/img/scenery/image4.jpg" alt="Slide Image" />
+                            <img class="w-100 d-block" src="<?= base_url('assets/frontend/'); ?>img/scenery/image4.jpg" alt="Slide Image" />
                         </div>
                         <div class="carousel-item">
-                            <img class="w-100 d-block" src="assets/img/scenery/image6.jpg" alt="Slide Image" />
+                            <img class="w-100 d-block" src="<?= base_url('assets/frontend/'); ?>img/scenery/image6.jpg" alt="Slide Image" />
                         </div>
                     </div>
                     <div>
@@ -109,7 +109,7 @@
                 <div class="row justify-content-center">
                     <div class="col-sm-6 col-lg-4">
                         <div class="card text-center clean-card">
-                            <img class="card-img-top w-100 d-block" src="assets/img/avatars/avatar1.jpg" />
+                            <img class="card-img-top w-100 d-block" src="<?= base_url('assets/frontend/'); ?>img/avatars/avatar1.jpg" />
                             <div class="card-body info">
                                 <h4 class="card-title">John Smith</h4>
                                 <p class="card-text">
@@ -123,7 +123,7 @@
                     </div>
                     <div class="col-sm-6 col-lg-4">
                         <div class="card text-center clean-card">
-                            <img class="card-img-top w-100 d-block" src="assets/img/avatars/avatar2.jpg" />
+                            <img class="card-img-top w-100 d-block" src="<?= base_url('assets/frontend/'); ?>img/avatars/avatar2.jpg" />
                             <div class="card-body info">
                                 <h4 class="card-title">Robert Downturn</h4>
                                 <p class="card-text">
@@ -137,7 +137,7 @@
                     </div>
                     <div class="col-sm-6 col-lg-4">
                         <div class="card text-center clean-card">
-                            <img class="card-img-top w-100 d-block" src="assets/img/avatars/avatar3.jpg" />
+                            <img class="card-img-top w-100 d-block" src="<?= base_url('assets/frontend/'); ?>img/avatars/avatar3.jpg" />
                             <div class="card-body info">
                                 <h4 class="card-title">Ally Sanders</h4>
                                 <p class="card-text">
@@ -174,10 +174,10 @@
             <p>© 2023 PPLSP-P3K UPI di SMKN 1 Cimahi</p>
         </div>
     </footer>
-    <script src="<?= base_url('assets/'); ?>bootstrap/js/bootstrap.min.js"></script>
-    <script src="<?= base_url('assets/'); ?>js/baguetteBox.min.js"></script>
-    <script src="<?= base_url('assets/'); ?>js/vanilla-zoom.js"></script>
-    <script src="<?= base_url('assets/'); ?>js/theme.js"></script>
+    <script src="<?= base_url('assets/frontend/'); ?>bootstrap/js/bootstrap.min.js"></script>
+    <script src="<?= base_url('assets/frontend/'); ?>js/baguetteBox.min.js"></script>
+    <script src="<?= base_url('assets/frontend/'); ?>js/vanilla-zoom.js"></script>
+    <script src="<?= base_url('assets/frontend/'); ?>js/theme.js"></script>
 </body>
 
 </html>
