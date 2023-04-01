@@ -75,25 +75,41 @@
                     <h2 class="text-info">Info-Info Piket dan Jadwal Mengajar</h2>
                     <p>Berikut Informasi Piket dan Jadwal Mengajar</p>
                 </div>
+
                 <div class="carousel slide" data-bs-ride="carousel" id="carousel-1">
                     <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="w-100 d-block" src="<?= base_url('assets/frontend/'); ?>img/scenery/image1.jpg" alt="Slide Image" />
-                        </div>
-                        <div class="carousel-item">
-                            <img class="w-100 d-block" src="<?= base_url('assets/frontend/'); ?>img/scenery/image4.jpg" alt="Slide Image" />
-                        </div>
-                        <div class="carousel-item">
-                            <img class="w-100 d-block" src="<?= base_url('assets/frontend/'); ?>img/scenery/image6.jpg" alt="Slide Image" />
-                        </div>
+
+                        <?php
+                        //mendapat gambar pertama
+
+                        if ($banyakPosting == 0) {
+                        } else {
+                            echo '<div class="carousel-item active">';
+                            $gambarPertama = $posting[0]['gambar'];
+                            echo '<img class="w-100 d-block" src="' . base_url('assets/gambar/') . $gambarPertama . '" alt="Slide Image" />';
+                            echo '</div>';
+                            //mendapatkan judul lainnya
+                            for ($i = 1; $i < $banyakPosting; $i++) {
+                                echo '<div class="carousel-item">';
+                                $gambarLain = $posting[$i]['gambar'];
+                                echo '<img class="w-100 d-block" src="' . base_url('assets/gambar/') . $gambarLain . '" alt="Slide Image" />';
+                                echo '</div>';
+                            }
+                        }
+
+                        ?>
+
                     </div>
                     <div>
                         <a class="carousel-control-prev" href="#carousel-1" role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span><span class="visually-hidden">Previous</span></a><a class="carousel-control-next" href="#carousel-1" role="button" data-bs-slide="next"><span class="carousel-control-next-icon"></span><span class="visually-hidden">Next</span></a>
                     </div>
                     <ol class="carousel-indicators">
                         <li data-bs-target="#carousel-1" data-bs-slide-to="0" class="active"></li>
-                        <li data-bs-target="#carousel-1" data-bs-slide-to="1"></li>
-                        <li data-bs-target="#carousel-1" data-bs-slide-to="2"></li>
+                        <?php
+                        for ($i = 1; $i < $banyakPosting; $i++) {
+                            echo '<li data-bs-target="#carousel-1" data-bs-slide-to="' . $i . '" ></li>';
+                        }
+                        ?>
                     </ol>
                 </div>
             </div>
@@ -106,50 +122,29 @@
                         Berikut ini adalah pengajar PPLSP-P3K UPI di SMKN 1 Cimahi 2023
                     </p>
                 </div>
+
                 <div class="row justify-content-center">
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="card text-center clean-card">
-                            <img class="card-img-top w-100 d-block" src="<?= base_url('assets/frontend/'); ?>img/avatars/avatar1.jpg" />
-                            <div class="card-body info">
-                                <h4 class="card-title">John Smith</h4>
-                                <p class="card-text">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                </p>
-                                <div class="icons">
-                                    <a href="#"><i class="icon-social-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="card text-center clean-card">
-                            <img class="card-img-top w-100 d-block" src="<?= base_url('assets/frontend/'); ?>img/avatars/avatar2.jpg" />
-                            <div class="card-body info">
-                                <h4 class="card-title">Robert Downturn</h4>
-                                <p class="card-text">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                </p>
-                                <div class="icons">
-                                    <a href="#"><i class="icon-social-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="card text-center clean-card">
-                            <img class="card-img-top w-100 d-block" src="<?= base_url('assets/frontend/'); ?>img/avatars/avatar3.jpg" />
-                            <div class="card-body info">
-                                <h4 class="card-title">Ally Sanders</h4>
-                                <p class="card-text">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                </p>
-                                <div class="icons">
-                                    <a href="#"><i class="icon-social-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <?php
+                    foreach ($ppl as $ppl) {
+                        echo '<div class="col-sm-6 col-lg-4">';
+                        echo ' <div class="card text-center clean-card">';
+                        echo '<img class="card-img-top w-100 d-block" src="' . base_url('assets/gambar/') . $ppl['foto'] . '">';
+                        echo '<div class="card-body info">';
+                        echo '<h4 class="card-title">' . $ppl['nama'] . '</h4>';
+                        echo '<p class="card-text">' . $ppl['keterangan'] . '</p>';
+                        echo '<div class="icons">';
+                        echo '<a href="instagram.com/' . $ppl['instagram'] . '"><i class="icon-social-instagram"></i></a>';
+                        echo '</div>';
+                        echo '</div>';
+                        echo '</div>';
+                        echo '</div>';
+                    }
+                    ?>
                 </div>
+
+
+
+            </div>
             </div>
         </section>
     </main>

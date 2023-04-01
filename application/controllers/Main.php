@@ -27,7 +27,12 @@ class Main extends CI_Controller
 
   public function index()
   {
-    $this->load->view('index');
+    $data['posting'] = $this->db->get('tb_posting')->result_array();
+    $data['banyakPosting'] = $this->db->get('tb_posting')->num_rows();
+    $data['ppl'] = $this->db->get_where('tb_anggota')->result_array();
+
+
+    $this->load->view('index', $data);
   }
 }
 
