@@ -134,7 +134,7 @@
                         echo '<h4 class="card-title">' . $ppl['nama'] . '</h4>';
                         echo '<p class="card-text">' . $ppl['keterangan'] . '</p>';
                         echo '<div class="icons">';
-                        echo '<a href="instagram.com/' . $ppl['instagram'] . '"><i class="icon-social-instagram"></i></a>';
+                        echo '<a href="https://instagram.com/' . $ppl['instagram'] . '"><i class="icon-social-instagram"></i></a>';
                         echo '</div>';
                         echo '</div>';
                         echo '</div>';
