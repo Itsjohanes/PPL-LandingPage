@@ -124,6 +124,7 @@
                 </div>
 
                 <div class="row justify-content-center">
+
                     <?php
                     foreach ($ppl as $ppl) {
                         echo '<div class="col-sm-6 col-lg-4">';

@@ -27,16 +27,21 @@ class Auth extends CI_Controller
 
   public function index()
   {
-    $data['title'] = 'Login';
-    $this->load->view('auth_header', $data);
-    $this->load->view('login');
+    if ($this->session->userdata('email')) {
+      redirect('Admin');
+    } else {
+      $data['title'] = 'Login';
+      $this->load->view('auth_header', $data);
+      $this->load->view('login');
 
-    $this->load->view('auth_footer');
+      $this->load->view('auth_footer');
+    }
   }
 
 
   public function login()
   {
+
     $email = $this->input->post('email');
     $password = $this->input->post('password');
     $user = $this->db->get_where('tb_akun', ['email' => $email])->row_array();

@@ -64,7 +64,7 @@
                                 <?php foreach ($posting as $j) : ?>
                                     <tr>
                                         <th scope="row"><?= $i; ?></th>
-                                        <td><a href="<?= base_url(); ?>assets/gambar/<?= $j['gambar']; ?>" <i class="fas fa-file-pdf"></i></a> </td>
+                                        <td><a href="<?= base_url(); ?>assets/gambar/<?= $j['gambar']; ?>" <i class="fas fa-images"></i></a> </td>
                                         <td>
                                             <a href="<?= base_url(); ?>Admin/deletePosting/<?= $j['id_posting']; ?>" class="btn btn-danger" onclick="return confirm('Data akan dihapus secara permanen');"><i class="fas fa-trash-alt"></i></a>
                                         </td>

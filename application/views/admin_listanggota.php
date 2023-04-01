@@ -85,7 +85,7 @@
                                         <th scope="row"><?= $i; ?></th>
                                         <td><?= $j['nama']; ?></td>
                                         <td><?= $j['keterangan']; ?></td>
-                                        <td><a href="<?= base_url(); ?>assets/gambar/<?= $j['foto']; ?>" <i class="fas fa-file-pdf"></i></a> </td>
+                                        <td><a href="<?= base_url(); ?>assets/gambar/<?= $j['foto']; ?>" <i class="fas fa-images"></i></a> </td>
                                         <td><?= $j['instagram']; ?></td>
                                         <td>
                                             <a href="<?= base_url(); ?>Admin/deleteAnggota/<?= $j['id_anggota']; ?>" class="btn btn-danger" onclick="return confirm('Data akan dihapus secara permanen');"><i class="fas fa-trash-alt"></i></a>
