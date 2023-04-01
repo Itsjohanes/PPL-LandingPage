@@ -153,13 +153,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-3">
-                    <h5>Absensi</h5>
+                    <h5>Sistem Informasi Absensi</h5>
                     <ul>
-                        <li><a href="#">Sistem Informasi Absensi</a></li>
+                        <li><a href="#">Sistem Informasi Absensi Guru PPL</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-3">
-                    <h5>Sistem Informasi Pencatat Keterlambatan</h5>
+                    <h5>Sistem Informasi Pencatat Keterlambatan Siswa</h5>
                     <ul>
                         <li><a href="#">Pencatat Keterlambatan</a></li>
                     </ul>

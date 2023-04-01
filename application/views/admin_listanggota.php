@@ -21,7 +21,7 @@
                     <h6 class="m-0 font-weight-bold text-primary">Add Anggota</h6>
                 </div>
                 <?php echo form_open_multipart('Admin/tambahAnggota'); ?>
-                <div class="row">
+                <div class="form-row">
                     <div class="col">
                         <select class="form-control" required id="exampleFormControlSelect1" id="role" name="role">
                             <option selected>Role</option>
