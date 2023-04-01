@@ -104,6 +104,62 @@ class Admin extends CI_Controller
       redirect('Admin/listAnggota');
     }
   }
+  public function posting()
+  {
+    if (!$this->session->userdata('email')) {
+      redirect('Auth');
+    } else {
+      $data['title'] = 'Posting';
+      $data['user'] = $this->db->get_where('tb_akun', ['email' => $this->session->userdata('email')])->row_array();
+      $data['posting'] = $this->db->get('tb_posting')->result_array();
+      $this->load->view('admin_header', $data);
+      $this->load->view('admin_sidebar');
+      $this->load->view('admin_topbar', $data);
+      $this->load->view('admin_posting');
+      $this->load->view('admin_footer');
+    }
+  }
+  public function tambahPosting()
+  {
+    if (!$this->session->userdata('email')) {
+      redirect('Auth');
+    } else {
+      $foto = $_FILES['foto']['name'];
+
+      if ($foto) {
+        $config['allowed_types'] = 'gif|jpg|png';
+        $config['max_size'] = '2048';
+        $config['upload_path'] = './assets/gambar/';
+        $this->load->library('upload', $config);
+        if ($this->upload->do_upload('foto')) {
+          $foto = $this->upload->data('file_name');
+          $this->db->set('gambar', $foto);
+          $this->db->insert('tb_posting');
+          $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Tugas berhasil ditambahkan</div>');
+          redirect('Admin/posting');
+        } else {
+          $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Tugas gagal ditambahkan</div>');
+          redirect('Admin/posting');
+        }
+      }
+    }
+  }
+  public function deletePosting($id)
+  {
+    if (!$this->session->userdata('email')) {
+      redirect('Auth');
+    } else {
+      $foto = $this->db->get_where('tb_posting', ['id_posting' => $id])->row_array();
+      $gambar = $foto['gambar'];
+      unlink(FCPATH . 'assets/gambar/' . $gambar);
+
+      $this->db->where('id_posting', $id);
+      $this->db->delete('tb_posting');
+
+      $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Tugas berhasil dihapus</div>');
+      redirect('Admin/posting');
+    }
+  }
 }
 
 
