@@ -56,7 +56,7 @@ class Auth extends CI_Controller
           redirect('Auth');
         } else {
           $this->session->set_userdata($data);
-          redirect('Auth/dashboard');
+          redirect('Admin');
         }
       } else {
         $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">
@@ -108,17 +108,7 @@ class Auth extends CI_Controller
       redirect('Auth');
     }
   }
-  public function dashboard()
-  {
-    if (!$this->session->userdata('email')) {
-      redirect('Auth');
-    } else {
-      $data['title'] = 'Dashboard';
-      $this->load->view('auth_header', $data);
-      $this->load->view('dashboard');
-      $this->load->view('auth_footer');
-    }
-  }
+
   public function logout()
   {
     $this->session->unset_userdata('email');

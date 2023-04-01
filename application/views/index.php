@@ -116,7 +116,7 @@
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                 </p>
                                 <div class="icons">
-                                    <a href="#"><i class="icon-social-facebook"></i></a><a href="#"><i class="icon-social-instagram"></i></a><a href="#"><i class="icon-social-twitter"></i></a>
+                                    <a href="#"><i class="icon-social-instagram"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -130,7 +130,7 @@
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                 </p>
                                 <div class="icons">
-                                    <a href="#"><i class="icon-social-facebook"></i></a><a href="#"><i class="icon-social-instagram"></i></a><a href="#"><i class="icon-social-twitter"></i></a>
+                                    <a href="#"><i class="icon-social-instagram"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -144,7 +144,7 @@
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                 </p>
                                 <div class="icons">
-                                    <a href="#"><i class="icon-social-facebook"></i></a><a href="#"><i class="icon-social-instagram"></i></a><a href="#"><i class="icon-social-twitter"></i></a>
+                                    <a href="#"><i class="icon-social-instagram"></i></a>
                                 </div>
                             </div>
                         </div>
