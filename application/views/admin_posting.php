@@ -18,7 +18,7 @@
         <div class="container-fluid">
             <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary">Add Posting</h6>
+                    <h6 class="m-0 font-weight-bold text-primary">Add Posting Gambar</h6>
                 </div>
                 <?php echo form_open_multipart('Admin/tambahPosting'); ?>
                 <div class="row">
@@ -44,7 +44,7 @@
             <!-- DataTales Example -->
             <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary">Postingan</h6>
+                    <h6 class="m-0 font-weight-bold text-primary">Postingan Gambar</h6>
                 </div>
                 <div class="card-body">
                     <div class="table-responsive">
@@ -85,5 +85,7 @@
 
 
 </div>
+</div>
+
 <!-- End of Main Content -->
 <!-- Page level plugins -->

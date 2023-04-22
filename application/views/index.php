@@ -72,8 +72,8 @@
         <section class="clean-block slider dark">
             <div class="container">
                 <div class="block-heading">
-                    <h2 class="text-info">Info-Info Piket dan Jadwal Mengajar</h2>
-                    <p>Berikut Informasi Piket dan Jadwal Mengajar</p>
+                    <h2 class="text-info">Dokumentasi Kegiatan Piket dan Mengajar </h2>
+                    <p>Berikut Dokumentasi Kegiatan Piket dan Mengajar</p>
                 </div>
 
                 <div class="carousel slide" data-bs-ride="carousel" id="carousel-1">

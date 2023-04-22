@@ -119,5 +119,7 @@
 
 
 </div>
+</div>
+
 <!-- End of Main Content -->
 <!-- Page level plugins -->
